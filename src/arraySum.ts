@@ -14,4 +14,6 @@
  */
 export function arraySum(numbers: number[]): number {
     // 在此實現函式
+    // arr.reduce((accumulator(累計值), currentValue())=>回傳結果, initialValue(累計值的初始值))
+    return numbers.reduce((sum,current) => sum + current ,0)
 }
