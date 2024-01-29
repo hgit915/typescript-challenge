@@ -10,4 +10,6 @@
  */
 export function filterEvens(numbers: number[]): number[] {
     // 請在此處寫下你的程式碼
+    const doubleArray = numbers.filter((value)=> value % 2 === 0)
+    return doubleArray
 }
