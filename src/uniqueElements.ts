@@ -6,4 +6,11 @@
  */
 export function uniqueElements(array: number[]): number[] {
     // 請在此處寫下你的程式碼
+    let existsValue:Array<number> = []
+ 
+    array.map((value)=>{
+        //array 是否已存在 existsValue ,不存在才需要新增
+        if(existsValue.indexOf(value) === -1) existsValue.push(value)
+    })
+    return existsValue
 }
